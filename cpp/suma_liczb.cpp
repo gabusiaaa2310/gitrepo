@@ -24,6 +24,7 @@ int main(int argc, char **argv)
     cout << "Suma liczb wynosi" << liczba 1 + liczba 2 + liczba 3 + liczba 4 + liczba 5 + liczba 6 + liczba 7 + liczba 8 + liczba 9 + liczba 10<< endl
 
     
+    
 	return 0;
 }
 
