@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+S#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import random
 
