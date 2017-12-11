@@ -35,6 +35,14 @@ def fib_iter2(n):
         return b
 
 
+# fib_rek(n) = 1 dla n {0, 1}
+# fib_rek(n) = fib_rek(n-1) + fib_rek(n-2) dla n > 1
+def fib_rek(n):
+    if n < 2:
+        return 1
+    return fib_rek(n - 1) + fib_rek(n - 2)
+
+
 def main(args):
     #  n = int(input('Podaj wyraz ciągu: '))
     #  assert fib_iter(0) == 1
