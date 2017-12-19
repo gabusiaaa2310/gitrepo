@@ -1,56 +1,31 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-#
-#  sort_wyb.py
-#  
 
-import random
+from random import randint
 
 
-def losuj(ileliczb, maksliczb):
-
-    liczby = []  # pusta lista
-
-    ile = 0  # ilość unikalnych liczb
-
-    # for i in range(ileliczb):
-    while ile < ileliczb:
-        liczba = random.randint(0, maksliczb)
-        if liczby.count(liczba) == 0:
-            liczby.append(liczba)
-            ile += 1
-
-    return liczby
+def wypelnij(lista, ile, makis):
+    for i in range(ile):
+        lista.append(randint(o, maks))
+    return lista
 
 
-def zamien(a, b):
-   # tmp = a;
-    a = b
-   # b = tmp;
-   
-   
-def sort_wyb(tab, n):
-    # selection sort
-	tab = []
-	print(" ------------- Sortowanie przez wybieranie ---------------")
-	for i in range(1, n):
-		k = i
-		print(i)
-s		for j in range(i + 1, n):
-			#print(j)
-			if tab[j] < tab[k]:
-				k = j
-        
-	# zamien(tab[i], tab[k])
+def sort_wyb(lista):
+    for i in range(len(list)):
+        k = i
+        for j in range(i + 1, len(lista)):
+            if lista[j] < lista[k]:
+                k = j
+        lista[i], lista[k] = lista[k], lista[i]
+    return lista
 
 
 def main(args):
-    ile = 10
-    tab = [ile]
-    maksliczb = int(input('Podaj maksymalną liczbe: '))
-    print(losuj(ile, maksliczb))
-    print(sort_wyb(tab, ile))
+    lista = []
+    print(wypelnij(lista, 10, 20))
+    print(sort_wyb(lista))
     return 0
+
 
 if __name__ == '__main__':
     import sys
