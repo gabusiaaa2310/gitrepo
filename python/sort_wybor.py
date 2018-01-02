@@ -6,7 +6,7 @@ from random import randint
 
 def wypelnij(lista, ile, makis):
     for i in range(ile):
-        lista.append(randint(o, maks))
+        lista.append(randint(0, maks))
     return lista
 
 
