@@ -6,9 +6,10 @@
 
 using namespace std;
 
-void sort_wstaw(int n, int *tab)
+void sort_wstaw(int t[], int n)
 {
-	int tab, j;
+	int el = 0;
+    int k=0;
 	for(int i=1; i<n; i++)
 	{
 		pom = tab[i];
