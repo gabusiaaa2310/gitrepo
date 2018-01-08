@@ -14,6 +14,13 @@ def sort_wstaw(lista):
     return lista
 
 
+def sort_wstaw_bin(lista):
+    """Wersja z przeszukaniem binarnym"""
+    for i in range(1, len(lista)):
+        el = lista[i]
+        k = szukaj_bin(0, i, lista, el)  # wyszuk. bin. indeksu do wstawienia el
+        pass
+
 def main(args):
     lista = [4, 3, 7, 0, 2, 3, 1, 9]
     print(lista)
