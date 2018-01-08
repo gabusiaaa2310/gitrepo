@@ -28,7 +28,7 @@ def wyszukiwanie_bin_iter(l, e):
 
 def wyszukiwanie_bin_rek(lewy, prawy, lista, el):
 
-    if lewy < prawy:
+    if lewy > prawy:
         return -1  # elementu nie znaleziono
 
     srodek = floor((lewy + prawy) / 2)
@@ -38,7 +38,7 @@ def wyszukiwanie_bin_rek(lewy, prawy, lista, el):
     if el < lista[srodek]:
         return wyszukiwanie_bin_rek(lewy, srodek - 1, lista, el)
     else:
-        return wyszukiwanie_bin_rek(srodek + 1, lista, el)
+        return wyszukiwanie_bin_rek(srodek + 1, prawy, lista, el)
 
 
 def main(args):
