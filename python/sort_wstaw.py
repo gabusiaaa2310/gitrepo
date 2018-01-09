@@ -2,6 +2,9 @@
 # -*- coding: utf-8 -*-
 
 
+from math import floor
+
+
 def sort_wstaw(lista):
     """wersja liniowa"""
     for i in range(1, len(lista)):
@@ -14,17 +17,32 @@ def sort_wstaw(lista):
     return lista
 
 
+def szukaj_bin(lewy, prawy, lista, el):
+    """Wersja liniowa wyszukiwania binarnego,
+    wyszukujemy indeks do wstawienia elementu"""
+    while lewy < prawy:
+        srodek = floor((lewy + prawy) / 2)
+        if el <= lista[srodek]:
+            prawy = srodek
+        else:
+            lewy = srodek + 1
+    return lewy
+
+
 def sort_wstaw_bin(lista):
     """Wersja z przeszukaniem binarnym"""
     for i in range(1, len(lista)):
         el = lista[i]
-        k = szukaj_bin(0, i, lista, el)  # wyszuk. bin. indeksu do wstawienia el
-        pass
+        k = szukaj_bin(0, i, lista, el)  # wyszuk. bin. indeksu do wstawienia
+        lista = lista[:k] + [el] + lista[k:i] + lista[i + 1:]
+        print(lista)
+    return lista
+
 
 def main(args):
     lista = [4, 3, 7, 0, 2, 3, 1, 9]
     print(lista)
-    print(sort_wstaw(lista))
+    print(sort_wstaw_bin(lista))
     return 0
 
 
