@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-30T10:21:13+01:00
+
+====== Złożonośc czasowa ======
+Created wtorek 30 styczeń 2018
+
+złożoność czasowa- określa wykorzystywanie pamięci przez program
+NIE BIERZEMY FIZYCZNEGO CZASU POD UWAGE! (jak dużo operacji podstawowych wykonuje)
+Nie pytamy się ile operacji wykona algorytm, chodzi o rząd wielkości

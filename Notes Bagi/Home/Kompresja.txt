@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-30T10:29:04+01:00
+
+====== Kompresja ======
+Created wtorek 30 styczeń 2018
+
+Zmniejszanie ilości danych, żeby informacje istatone(!) zachować. Współczynnik kompresji:
+Rc = Vk/Vnk * 100% - o ile zmniejszyły sie dane
+R'c = (1- Vk/ Vnk)* 100% - ile miejsca zaoszczędzona
+
+===== Rodzaje kompresji =====
+1) Kompresja stratna
+a) dźwięk= MP3, OGG
+b) obraz= JPG< PNG
+c) filmy= MPEG1, MPGE2, MPGE4,.avi, .mp4, .mkv(>MATROSKA)- jakość kompresji zalezy od PRZEPŁYWNOŚCI, b/s, KB/S, Mb/s, CBR- Constant Bit Rate

@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-30T10:20:53+01:00
+
+====== Algorytmy 1 ======
+Created wtorek 30 styczeń 2018
+
+WŁASNOŚCI:
+1. Poprawność
+2. Skończoność
+3. Złożoność
+4. Efektywność
+
+AD. 1. POPRAWNOŚĆ
+specyfika problemu- opis danych i wyników oraz zależności między nimi
+
+zadanie- oblicz silnię liczby naturalnej n, stosując algorytm interacyjny
+dane- dowolna liczba naturalmna 
+Inudkcja- sprawdzanie pewnego zakresu i odniesienie się poprzez niego do wszytskich 
+
+BŁĘDY:
+- składniowe
+- logiczne

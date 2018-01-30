@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-30T10:19:44+01:00
+
+====== Home ======
+Created wtorek 30 styczeń 2018
+
+# upper mała liter na dużą, aski dowolnego znaku ord, chr aski cos tam litery
