@@ -14,3 +14,20 @@ R'c = (1- Vk/ Vnk)* 100% - ile miejsca zaoszczędzona
 a) dźwięk= MP3, OGG
 b) obraz= JPG< PNG
 c) filmy= MPEG1, MPGE2, MPGE4,.avi, .mp4, .mkv(>MATROSKA)- jakość kompresji zalezy od PRZEPŁYWNOŚCI, b/s, KB/S, Mb/s, CBR- Constant Bit Rate
+bezstratna kompresja dźwięków- FLAC, M4A  / Apple Lossless, WMA /  Windows Media Audio 9 Lossless, APE, MLP (PPCM) / Meridian Lossless Packing
+
+===== Formaty plików wideo: =====
+- AVI-  format plików wideo często wykorzystywany do zapisywania filmów obrobionych w programach do obróbki wideo. Jest często używany na urządzeniach mobilnych PDA. AVI jest odmianą formatu RIFF.
+- MP4 (MPEG-4 Part 14) - jest kontenerem multimedialnym.
+- MKV (Matroska) - format przechowywania obrazu i dźwięku w jednym pliku (kontener multimedialny).
+
+Pierwszym wydajnym kontenerem był [[DivX]]
+Szybkość transmisji bitów (bitrate- przepływność) Kiedy przystępujesz do kodowania, masz do wyboru VBR (ang. Variable Bit Rate encoding – Zmienna szybkość transmisji bitów) lub CBR (ang. Constant Bit Rate encoding – stała szybkość transmisji bitów). Im wiekszy bitrate tym lepsza jakość. Jednostką są bity/sekunde, oraz jej wielokrotności.
+
+===== Upload– =====
+proces przeciwny do pobierania danych, polegający na wysyłaniu plików lub innych danych do serwera lub komputera należącego do innego użytkownika.
+Często łącze internetowe jest umownie dzielone na dwa kanały: kanał wysyłania i kanał pobierania. Przepustowość tych kanałów (czyli maksymalną prędkość przesyłania danych) mierzy się w bitach na sekundę i jednostkach wielokrotnych.
+Łącza internetowe popularne w warunkach domowych (ADSL, telewizja kablowa, sieć osiedlowa itp.) ze względu na ich stosunkowo niewysoką cenę, są często asymetryczne, czyli mają zaniżoną przepustowość kanału umożliwiającego wysyłanie (ang. upload) danych w stosunku do kanału pobierania (ang. download), umożliwiającego odbieranie danych. Z tego powodu wysyłanie pliku jest znacznie wolniejsze niż pobieranie.
+
+===== Download- =====
+Pobieranie plików (ang. download, potocznie ściąganie) – proces przeciwny do wysyłania danych (ang. upload), polegający na pobieraniu plików lub innych danych z sieci (m.in. serwera, witryn WWW, klientów FTP, klientów P2P oraz P2M). Słowo upowszechniło się również jako nazwa działu lub miejsca na stronie internetowej zawierającej pliki udostępnione do pobrania.

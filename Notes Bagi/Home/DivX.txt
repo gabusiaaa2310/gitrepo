@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-01T08:28:26+01:00
+
+====== DivX ======
+Created czwartek 01 luty 2018
+
+DivX – stratna metoda kompresji obrazu filmowego, w nowszych wersjach zgodna z MPEG-4 część 2, pozwalającą zapisać na zwykłej płycie kompaktowej filmy o długości ok. 90 min i jakości niewiele ustępującej DVD-Video. Wykorzystywana także do przesyłania filmów przez Internet.
+
+Do odtwarzania wymagany jest układ komputerowy posiadający odpowiednio wydajny procesor do dekodowania programowego (np. komputer osobisty lub konsola) lub dekoder sprzętowy (np. w niektórych odtwarzaczach DVD).
+
+Pierwotnie pod nazwą "DivX ;-)" występowała nielegalnie udostępniona, zmodyfikowana wersja kodeka MPEG 4 autorstwa Microsoftu. Dokonał tego francuski haker Jérôme Rota (ur. 1973 w Montpellier). Warto jednak zauważyć, że kodek ten, pomimo sugerującej to nazwy, nie jest zgodny ze standardem MPEG-4 (tak samo DivX 3) – Microsoft nazwał go tak, ponieważ myślał, że zostanie on właśnie wybrany jako ten standard. Ponieważ tak się nie stało, kolejne wersje tego kodeka nosiły już nazwę Windows Media Video. Autorzy DivX-a postanowili jednak stworzyć własną implementację kodeka MPEG-4. W ten sposób powstał Project Mayo, z którego następnie wykształcił się obecny, komercyjny DivX oraz otwarty XviD. Wersje DivX od 4 do 6.x są zgodne ze standardem MPEG-4 ASP. Wersja 7 jest zgodna z standardem MPEG-4 AVC[1].

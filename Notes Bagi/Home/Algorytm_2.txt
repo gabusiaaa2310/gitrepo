@@ -1,0 +1,29 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-01T08:19:57+01:00
+
+====== Algorytm 2 ======
+Created czwartek 01 luty 2018
+
+===== Algorytm kompresji słownikowej =====
+
+(1 liczba o ile się ccofamy, druga ile znaków bierzemy)
+
+The rain in Spain falls mainly on the plain.
+The rain <3, 3> Sp<9,4> falls m<11,3>ly on t<34,3> pl<15,3>.
+
+6bitów+2bity = 8bitów
+
+33 bajty / 44 bajty * 100% = 75%
+
+==== Współczynnik kompresji ====
+Rc= Vk / Vnk * 100%
+Vk- wielkość skompresowana
+Vnk- wiekość nieskompresowana
+Rc- współczynnik kompresji
+
+*Dla archiwum cpp w 7z
+Rc= 128,8 kB / 382 kB * 100% = 33%
+
+*Dla archiwum cpp zip
+Rc= 204,5 kB / 382 kB * 100% = 53%
