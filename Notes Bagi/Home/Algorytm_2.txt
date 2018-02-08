@@ -27,3 +27,10 @@ Rc= 128,8 kB / 382 kB * 100% = 33%
 
 *Dla archiwum cpp zip
 Rc= 204,5 kB / 382 kB * 100% = 53%
+
+Streamy- zapisywanie archiwum, w taki sposób aby zajmowała jak najmniej miejsca
+
+===== Rodzaje kompresji: =====
+- ZIP
+- RAR
+- TAR (Tape ARchiver)
