@@ -72,4 +72,26 @@ Klasyczne sieci Ethernet mają cztery cechy wspólne. Są to:
 - proces transmisji
 - podstawowe reguły obowiązujące przy ich projektowaniu.
 
+Kapsułkowanie i proces odwrotny:
+- adresy sprzętowe pr4zekazywane w nagłówku ramki
+- adresy sieciowe
+- usługa i port
 
+Gniazdo w telekomunikacji (ang. socket) – pojęcie abstrakcyjne reprezentujące dwukierunkowy punkt końcowy połączenia. Dwukierunkowość oznacza możliwość wysyłania i odbierania danych. Wykorzystywane jest przez aplikacje do komunikowania się przez sieć w ramach komunikacji międzyprocesowej.
+Gniazdo posiada trzy główne właściwości:
+-  typ gniazda identyfikujący protokół wymiany danych
+-  lokalny adres (np. adres IP, IPX, czy Ethernet)
+	opcjonalny lokalny numer portu identyfikujący proces, który wymienia dane przez gniazdo (jeśli typ gniazda pozwala używać portów)
+Gniazdo może posiadać (na czas trwania komunikacji) dwa dodatkowe atrybuty:
+-  adres zdalny (np. adres IP, IPX, czy Ethernet)
+-  opcjonalny numer portu identyfikujący zdalny proces (jeśli typ gniazda pozwala używać portów)
+
+Polecenia: 
+ping (wysyła pakiety, informuje, że jakiś host jest w sieci) 
+netstat (aktywne połączenia sieciowe)
+addr/ ipconfig [[/org]]
+route (pokazuje tablice rutingu, configuracje bramy sieciowej)
+dig (pozwala spr konfiguracje serwera DNS)
+arp -n (pozwala wyświetlać tablice arp)
+
+TCPView- program do sprawdzania połączeń
