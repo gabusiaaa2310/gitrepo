@@ -1,0 +1,42 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-26T12:16:16+02:00
+
+====== Komputer i system operacyjny ======
+Created poniedziałek 05 marzec 2018
+
+Architektura von Neumanna – pierwszy rodzaj architektury komputera, opracowanej przez Johna von Neumanna, Johna W. Mauchly’ego oraz Johna Presper Eckerta w 1945 roku. Cechą charakterystyczną tej architektury jest to, że dane przechowywane są wspólnie z instrukcjami, co sprawia, że są kodowane w ten sam sposób.
+
+W architekturze tej komputer składa się z czterech głównych komponentów:
+- **jednostki arytmetyczno-logicznej** odpowiedzialnej za wykonywanie podstawowych operacji arytmetycznych- spełnia role 
+- pamięci komputerowej przechowującej dane programu oraz instrukcje programu; każda komórka pamięci ma unikatowy identyfikator nazywany jej adresem
+- jednostki sterującej odpowiedzialnej za pobieranie danych i instrukcji z pamięci oraz ich sekwencyjne przetwarzanie
+
+
+procesor- rejestry
+podział:
+- rejestry danych – do przechowywania danych całkowitoliczbowych, np. argumentów i wyników obliczeń,
+- rejestry adresowe – do przechowywania adresów i uzyskiwania dostępu do pamięci, wśród nich wyróżnić można rejestry segmentowe,
+- rejestry ogólnego zastosowania (ang. general purpose), będące połączeniem dwóch powyższych typów, czyli mogące przechowywać zarówno dane, jak i adresy,
+- rejestry zmiennoprzecinkowe – do przechowywania i wykonywania obliczeń na liczbach zmiennoprzecinkowych, z reguły znajdujące się w oddzielnym bloku funkcjonalnym procesora, zwanym koprocesorem (FPU),
+- rejestry stałych – przechowujące stałe, jedynie do odczytu,
+- rejestry wektorowe – przechowujące dane do jednoczesnego przetwarzania wielu danych przez instrukcje typu SIMD,
+- rejestry specjalne, określające stan wykonania, wśród nich wymienić można rejestr wskaźnika instrukcji, wskaźnik stosu, rejestr flag procesora,
+- rejestry instrukcji – do przechowywania obecnie przetwarzanej instrukcji
+
+Magistrala- strzałki:
+- szyna sterująca- synchronizacja wszystkich elemantów komputera, wykonuje się przez zegar. ma częstotliwość pracy która nadaje tempo
+-  szyna adresowa- po to by komputer wiedział z jakich komórek pamięci pobierać dane i do jakich komórek je wysyłać
+- szyna danych- do przekazywania danych
+
+Pamięć:
+- ROM- Read-Only Memory- oprogramowanie sprzętowe  (firmware) zawiera BIOS (Basic Input/Output System) udostępnia elementy sprzętowe dalszym programem. BIOS zastępowany jest UEFI (Unified Extensible Firmware Interface) dodatkowe zastosowania np więcej sprzętów (ulepszony BIOS po prostu) jak raz coś zapiszemy to zostanie tam zapisane 
+- RAM- Random-access memory- pamięć o dostępie swobodnym, ciągle podtrzymywana i odświeżana (komputer musi być włączony)
+napięcie od 3 do 6 to jest 1
+jeżeli napięcie 0,1 to logiczne 0
+procesory 64-bitowe 
+producenci łączą w pary coś tam i coś tam i wychodzi nawe 128-bitowe
+
+do architektury procesora muszą być zastosowane:
+
+

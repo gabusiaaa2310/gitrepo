@@ -1,0 +1,48 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-26T12:16:40+02:00
+
+====== Linux ======
+Created poniedziałek 12 marzec 2018
+
+
+Linux- nazwa jądra systemu
+Historia Linuksa rozpoczęła się w 1991 roku, kiedy to fiński programista, Linus Torvalds poinformował o hobbystycznym tworzeniu przez siebie niedużego, wolnego systemu operacyjnego, przeznaczonego dla procesorów z rodzin i386 oraz i486.
+dystrybujcja linuxa- jest rozprowadzany
+1 Linux ma wiele wersji (dystrybucji)
+2 pierwsze- slakwear, debian (jest tworzona dystrybucja ubuntu,debian, linux mint)
+!!! stacja dyskietek out, pae/nv tak, dźwięk, out !!!
+iso- format instalacyjny
+pliki systemowe trafiają do dysku (windows) C jest tworzony katalog "windows",a programy "program files", pliki użytkownika znajdądują się w "users" 
+w systemie windows partycje ozn są za pomoca litery :\
+[[/dev/sda]]
+[[/dev/sdb]]
+[[/dev.sdc1]] (3 dysk podłączony do systemu 1)
+systemy plików na każdym systemie
+system ntfs
+system (v)fat
+LINUX 
+system ext4 (odporny na wirusy)
+w  środowisku windows ważną rzeczą systemową jest plik wymiany 
+system swap- partycja wymiany 
+gnome
+do instalacji linuza potzrebujemy 3 partycji mianowicie, partycji głównej w której montowany jest główny i jądro
+druga partycja na katalog użytkownika 
+3 partycja wymiany 
+Partycje mogą być:
+- podstawowe (główne) max 4
+-logiczne można ich tworzyć bardzo dużo
+standart GPT(brak ograniczeń partycji pdst i log)
+
+formaty instalatorów w Windowsie:
+.exe lub .msi
+
+zasada KISS- zrób to najprościeju jak można
+katalog etc- zwykłe pliki tekstowe
+katalog użytkowinika- katalog config- 
+
+środowisko graficzne systemu ubuntu/debian jest środowisko gnom
+ konkurentem jest środowisko
+
+Linux
+aby ukryć plik albo katalog, jego nazwę poprzedzamy kropką

@@ -1,0 +1,37 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-26T12:19:40+02:00
+
+====== MS- DOS ======
+Created czwartek 08 marzec 2018
+
+polecenie "dir"  pokazuje zawartośc katalogu w którym jesteśmy
+- plik ma mieć 3 lirterowe rozrzeszenie
+- duże ograniczenia:
+* nazwa pliku mogła mieć tylko 8 znaków (+ KROPKA I 3 L ROZSZERZENE)
+* obsługa pamięci (640kB pamięci)
+* największy rozmiar programu musiał mieć 64 kB
+- był systemem który działał w trybie rzeczywistym
+- jest jeszcze tryb wirtualny procesora
+- pamięc fizyczna zamienia się na pamięc wirtualną
+- umożliwiał pracę 1 urzytkownikowi
+- jednozadaniowy system
+- od czasów dosta pliki mają swoje atrybuty:
+* a ozn archiw i jest automatycznie nadawana wszystkim plikom dos i windows
+* r ozn read only- tylko do odczytu
+* s ozn system
+* h ozn hiden plik ukryty
+- windows 3.1- umożliwiał łączenie w sieć lokalną w topologię magistrali (pierwszy krok do tego by przrżucicć ludzi na interfejs graficzny)
+* spopularyzował ikonę 
+* stosuje się myszki, a nie poleceń
+* hierarchia plików
+* wprowadza pojęcie wielozadawniości 
+* 3.1.11 umożliwiał pracę 2/3 użytkowników na komputerze- zyskał dużą popularność
+- microsoft windows 95:
+* dopracowane technologie- DDE (dynamiczna wymiana danych), OLE(łączenie i osadzanie projektów)
+- obsługa USB od servise pack 2 w 95 tak jak ctp 
+- obsługa stosu CTP (umożliwiał łączenie się z innymi komputerami)- podzieli komputery na NT(komputer dla biur np) i DEASCOPT (komputer domowy, niepotrzbne łączenie z siecią)
+- po 95 powtsał windows 98
+- standardowa przeglądarka- netscape navigator (1994- czyli przed windows 95, dominowała do końca lat 90)
+- internet explorer- najgorsza przeglądarka ever xD
+* technologia activx- powalała uruchamiac zew wtyuczki realizujące jakieś zad np okienko Javy. Dużo dziur i łat, założenie dobre wykonanie straszne

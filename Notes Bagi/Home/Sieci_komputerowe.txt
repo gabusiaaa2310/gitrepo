@@ -1,0 +1,34 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-26T12:14:42+02:00
+
+
+
+====== Sieci komputerowe ======
+Created poniedziałek 19 marzec 2018
+
+HOST- dowolna maszyna (komputer, karta sieciowa, modem itp.) uczestnicząca w wymianie danych lub udostępniająca usługi sieciowe poprzez sieć komputerową za pomocą protokołu komunikacyjnego TCP/IP oraz posiadająca własny adres IP. np smartfon, TV inteligente, dekoder dvd
+Są 2 rodzaje hostów:
+jedne są klientam, a niektóre serwerami. Serwer udostępnia usługi, a klient pobiera. jeden komputer może pełnić obie role.
+Sam system operacyjny ma role klienta i serwera.
+Aby hosty widziały się potrzebujemy switcha czyli przełącznika. możemy podpiąć drukarkę, smartfona itd. ale potrzebują odpowoiednich wejść: skrętki, Rj45
+switch tworzy sieć w topologii gwiazdy
+{{./pasted_image.png}}
+switch nie zapewnia połączenia z innymi sieciami
+Tworzy lan- lokalną sieć 
+router łączy jedną sieć z druga siecią. najczęściej posiada wbudowany switch. ma lan i wan. WAN- sieć rozległa- może obejmować np kraj
+internet- suma wszystkich sieci
+komunikacja w internecie- sieć szkieletowa
+adres IP- składa się z 4 cyfr dziesiętnych oddzielonych kropkami
+gateway- brama- przejście do drugiej sieci- router mam zazwyczaj najniższa liczbę pierwsza, najczęsciej 1. 
+Pierwsze 3 cyfry routera i komputera muszą być takie same. Adres IP nie może powtórzyć się w sieci!!!
+serwer dns- Adres urządzenia które zapewnia tłumaczenie nazw na adresy ip
+
+Reguły komunikacji w sieciach internetowych są wyznaczane przez protokoły 
+najważniejszym protokołem jest TCP/IP
+DNS, http, ftp (wersja bezpiczna sftp), ntp
+(nazwa hosta + domena)  
+
+logowanie, uwierzytelnianie- 
+podwójne uwierzytelnienia- sms, token sprzętowy 
+

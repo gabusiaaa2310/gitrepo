@@ -1,0 +1,29 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-26T12:15:34+02:00
+
+====== Szyfrowanie asymetryczne ======
+Created wtorek 27 luty 2018
+
+https:
+szyfrowana wersja protokołu https
+
+kryptografia;
+klucz publiczny- służy 
+klucz prywatny
+udostępnienie klucza publicznego- znajomi, instytuacje, portafle
+
+pretty good privacy (PGP)- narzędzie do szyfrowania poczty elektronicznej
+
+RSA:
+najpopularniejszym algorytmem do generowania kluczy jest algorytm RSA 
+algorytm RSA opiera się na parach dużych liczb pierwszych
+
+podpis elektroniczny- 
+urzędy certyfikacji- instytucja zaufania publicznego, która za jakieś pieniądzie kreuje podpis elektroniczny i daje wam na to cefrtyfikat
+odcisk palca- 
+klucz publiczny i prywatny nie występują w postacji jawnej, są zachaszowane za pomocą funkcji skrótu
+najczęściej wykorzytywaneL CRC5, MD5, SHA
+
+TYLDA OZN KATALOG DOMOWY ~~~
+suma kontrolna- fingerprint

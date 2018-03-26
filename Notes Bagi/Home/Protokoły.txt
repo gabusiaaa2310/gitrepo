@@ -1,0 +1,75 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-26T12:14:07+02:00
+
+====== Protokoły ======
+Created czwartek 22 marzec 2018
+
+protokoły:
+pop3, iman4 do odczytu e-mail
+
+dns- system nazw domenowych
+adres url- pojawiają się w pasku adresu przeglądarki, zaczyna sie od protokołu (fth, http itd.) następnie dwukropek i nazwa hosta zbudowana jest z: 1 człon jest faktyczną nazwą hosta(www), po kropce sa nazwy domenowe dzielące sie na kilka kategorii, na końcu domena krajowa(.pl, . jp itd) lub funkcjonalna (.com, .org itd)
+w ramach tych domen tworzą się podomeny funkcjonalne (z ang suddomena) (wikipedia itd)
+odwzorowanie adresów na adresy ip
+w rekordach zapisane są numer ip i nazwa serera
+baza dns jest bazą rozproszoną , nie ma 1 centralnej, dzięki czemu internet funkcjonuje 
+mvp host
+Główne serwery DNS- jest ich 13 i są rozproszone po całej kuli ziemskiej 
+żaden protokół nie zadziała, jeżeli protokoły z warsty aplikacji nie skorzystają z protokołów zawartych w warstiwie transportowej
+
+**WARSTWA TRANSPORTOWA:** 
+**TCP**
+- jest połączeniowy- tworzy stałe połączenie- serwer i klient kontrolują kolejne pakiety, spr czy dokonują czegos tam czego nie zapamiętałam bo Pan mówi za szybko ;(
+- jest stanowy- 
+porty są wykorzystwywane przez: 
+- serwery 
+- klientów
+ssh korzysta z portu 22
+- protokół niezawodny
+https://pl.wikipedia.org/wiki/Port_protoko%C5%82u
+powyżej 1000 portu każdy może korzystać z nich 
+
+paczki= pakiety
+segment tcp zawiera numer sekwencyjny który składa podzielone paczki w 1 część
+podzielone paczki nie są wysyłane do klienta w odpowiedniej kolejności, za pomocą segentów musimy je złożyć, niekiedy też część paxczek trzeba wysłać ponownie
+protokół tcp jest niezawodny za numery sekwencyjne i sumy kontrolne
+
+**UDP**
+- protokół transportolwy
+- bezpołączeniowy
+- zawodny (dzięki czemu rozgryki w grach są w miarę płynne)
+- z tego protokołu korzysta DNS
+
+**WARSTWA INTERNETOWA:**
+- https://pl.wikipedia.org/wiki/Protok%C3%B3%C5%82_internetowy i https://pl.wikipedia.org/wiki/IPv4
+- adres ip jest dzielony na 32 bity a to na oktety, są zapisane za pomocą liczb dziesiętnych oddziwlonych kropkami
+- w adresie ip są zakodowane 2 rzeczy, adres ip i adres komputera w tej sieci
+- liczba po ukośniku to maska sieci- mówi ile bitów adresu ip przeznaczonych jest na adres sieci 
+ADRES IP
+192.168.3.23/24
+w tym 192.168.3.0 adres sieci
+w tym 24 to maska sieci
+adres broadcast (adres rozgłoszeniowy)
+adresy ip dzielą się na lokalne i publiczne
+lokalne:
+- network address translation- translacja adresów sieciowych https://pl.wikipedia.org/wiki/Network_Address_Translation
+
+**WARSTAWA DOSTĘPU SIECI**
+Protokuł DHCP https://pl.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol
+Adres MAC (od ang. medium access control address) – termin o dwóch znaczeniach:
+- warstwa sterowania dostępem do medium transmisyjnego w modelu OSI
+- sprzętowy adres karty sieciowej Ethernet i Token Ring, unikatowy w skali światowej, nadawany przez producenta danej karty podczas produkcji.
+Powiązanie adresu ip z adresem sieciowym 
+
+Protokuł Ethernet
+Ethernet – technika, w której zawarte są standardy wykorzystywane w budowie głównie lokalnych sieci komputerowych. Obejmuje ona specyfikację przewodów oraz przesyłanych nimi sygnałów. Ethernet opisuje również format ramek i protokoły z dwóch najniższych warstw Modelu OSI. Jego specyfikacja została podana w standardzie IEEE 802.
+Ethernet jest najpopularniejszym standardem w sieciach lokalnych. Inne wykorzystywane specyfikacje to Token Ring, FDDI czy ARCNET.
+Ethernet został opracowany przez Roberta Metcalfe'a w Xerox PARC czyli ośrodku badawczym firmy Xerox i opublikowany w roku 1976. Bazuje na idei węzłów podłączonych do wspólnego medium i wysyłających i odbierających za jego pomocą specjalne komunikaty (ramki). Wszystkie węzły posiadają niepowtarzalny adres MAC.
+Klasyczne sieci Ethernet mają cztery cechy wspólne. Są to:
+- parametry czasowe,
+- format ramki,
+- proces transmisji
+- podstawowe reguły obowiązujące przy ich projektowaniu.
+
+
