@@ -8,6 +8,3 @@ Created wtorek 06 luty 2018
 szyfrowanie polega na ukryciu danycvh (np. tekstu)(kryptografia). Otrzymujemy w ten sposób **SZYFROGRAM**. Odczytanie ukrytej informacji to **DESZYFRACJA** (skryptoanaliza)
  Kryptografia + kryptoanaliza = kryptologia.
 
-====== Rodzaje szyfrów ======
-
-
