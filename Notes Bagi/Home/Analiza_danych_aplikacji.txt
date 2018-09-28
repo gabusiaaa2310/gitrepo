@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-09-17T09:06:09+02:00
+
+====== Analiza danych aplikacji ======
+Created poniedziałek 17 września 2018
+
+tabele to zestaw pól, każde pole ma swoją nazwę i typ danych (tekstowe i liczbowe)
+
+
+===== SQL- strukturalny język zapytań =====
+Normalizacja- bezstratny proces organizowania danych w tabelach mający na celu zmniejszenie ilości danych składowanych w bazie oraz wyeliminowanie potencjalnych anomalii 
+wykonujemy w 3 krokach:
+1. dążymy do atomowości danych (1 kolumna = 1 typ informacji) dzięki czemu możemy dokonywać efektywnych zapytań
+kolekcja- dużo danych w 1 kolumni
+2. 2NF 
+jedna tabele na wiele tabel
+klucz podstawpowy- max krótki- szybsze wyszukiwanie danych- pole intiger. klucze dzielimy na naturalne i sztuczne. Przykładem klucza naturalnnego jest pesel 
+klucz obcy-  nazwa zazwyczaj odpowiada kluczowi danemu, typ dany
+3. 3NF
