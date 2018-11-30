@@ -5,6 +5,7 @@ from peewee import *
 
 baza_nazwa = 'test.db'
 baza = SqliteDatabase(baza_nazwa)  # instancja bazy
+
 ### MODELE #
 class BazaModel(Model):
     class Meta:

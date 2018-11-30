@@ -4,55 +4,56 @@
 #  orm_peewee.py
 
 import os
-from peewee import *
+from uczniowie_model import *
 import csv
 
 def czy_jest(plik):
-    """F. sprawdza, czy plik istnieje na dysku"""
     if not os.path.isfile(plik):
         print("Plik {} nie istnieje!".format(plik))
         return False
     return True
+
+
 def czytaj_dane(plik, separator=","):
-    dane = []  # pusta lista na rekordy
+    dane = []
     
     if not czy_jest(plik):
         return dane
     
-    with open(plik, 'r', newline='', encoding='utf-8') as plikcsv:
-        tresc = csv.reader(plikcsv, delimiter=separator)
+    with open(plik, newline='', encoding='utf-8') as plikcsv:
+        tresc = csv.reader(plikcsv, delimiter=separator, skipinitialspace=True)
         for rekord in tresc:
             dane.append(tuple(rekord))
     
     return dane
-    
-    
+
+
 def dodaj_dane(dane):
     for model, plik in dane.items():
-        pola = [pole from pole in model._meta.fields]
-        pola.pop(0) # usunięcie pola id
+        pola = [pole for pole in model._meta.fields]
+        pola.pop(0)
         print(pola)
-
-        wpisy = czytaj_dane(pliki + '.csv')
+        
+        wpisy = czytaj_dane(plik + '.csv')
         
         model.insert_many(wpisy, fields=pola).execute()
-        
-    
+
+
 def main(args):
     if os.path.exists(baza_nazwa):
         os.remove(baza_nazwa)
-    baza.connect()  # połączenie z bazą
+    baza.connect()
     baza.create_tables([Klasa, Uczen, Przedmiot, Ocena])
-    
+
     dane = {
         Klasa: 'klasy',
         Uczen: 'uczniowie',
         Przedmiot: 'przedmioty',
         Ocena: 'oceny'
     }
-    
+
     dodaj_dane(dane)
-    
+
     baza.commit()
     baza.close()
 
