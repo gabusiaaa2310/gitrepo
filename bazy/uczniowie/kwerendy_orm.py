@@ -52,13 +52,44 @@ def kw04():
     for obj in query:
         print(obj.uczen.nazwisko, obj.ile)
 
+def kw05():
+    """po ile uczniów mają klasy, uporządkuje wdł ilości"""
+    query = (Uczen
+        .select(Uczen.klasa.klasa, fn.Count(Uczen.id).alias('ile'))
+        .join(Klasa)
+        .group_by(Uczen.klasa.klasa)
+        .order_by(SQL('ile').asc())
+    )
+    for obj in query:
+        print(obj.klasa.klasa, obj.ile)
+
+def kw06():
+    """średnia ocen z poszczególnych przedmiotów"""
+    fn.AVG()
+    querty = (Ocena
+        .select(Ocena.przedmiot.przedmiot, fn.AVG(Ocena.ocena).alias('srednia'))
+        .join(Przedmiot)
+        .group_by(Ocena.przedmiot.przedmiot)
+        .order_by(SQL('srednia').asc())
+    )
+    for obj in query:
+        print(obj.przedmiot.przedmiot, obj.srednia)
+
+def kw08():
+    """oceny ucznia Szymczak z poszczególnych przedmiotów"""
+    query = Uczen
+        .select(Ocena.ocena, Ocena.uczen.nazwisko)
+        .where(Uczen.nazwisko == 'Szymczak')
+        .join(Uczen)
+    )
+    for obj in query:
+        print(obj.uczen.nazwisko, obj.srednia)
+
+
 def main(args):
     baza.connect()
     
-    # kw01()
-    # kw02()
-    # kw03()
-    kw04
+    kw08()
     
     baza.close()
     return 0

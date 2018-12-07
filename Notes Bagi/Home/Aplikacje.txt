@@ -1,0 +1,32 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-12-07T12:02:52+01:00
+
+====== Aplikacje ======
+Created piątek 07 grudnia 2018
+
+Adres URL:
+https:// - protokół, język (zestaw poleceń)
+https:// HTML + CSS [[+JavaScript]]
+www- nazwa serwera
+onet.pl- domena serwera
+www.onet.pl- pełna nazwa serwera- kontaktuje się z numerem 213.180.141.140
+/ - katalog główny serwera, domyślny zasób
+
+Rozpis wyszukania w google "http":
+https://
+www.google.pl
+[[/search]]
+?
+source=hp&
+ei=fVcKXI-IN8ijsAGM86yICg&
+q=http&
+btnK=Szukaj+w+Google&
+oq=http&
+gs_l=psy-ab.3..0l2j0i131j0l2j0i131l2j0l3.5424.6440..7098...0.0..0.110.415.0j4......0....1..gws-wiz.....0.Nvgl2NSq5N8
+
+metody HTTP:
+- GET
+- POST
+
+127.0.0.1- adres lokalny
