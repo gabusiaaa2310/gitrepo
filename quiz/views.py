@@ -8,6 +8,7 @@ from flask import render_template, request, flash, redirect, url_for
 
 from modele import Kategoria, Pytanie, Odpowiedz
 
+
 app = Flask(__name__)
 
 @app.route("/")
@@ -38,3 +39,4 @@ def quiz():
     
     pytania = Pytanie().select().join(Odpowiedz).distinct()
     return render_template('quiz.html', pytania=pytania)
+
