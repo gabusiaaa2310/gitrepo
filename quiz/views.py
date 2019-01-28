@@ -2,9 +2,11 @@
 # -*- coding: utf-8 -*-
 #
 #  views.py
-#  
+
 from flask import Flask
-from flask import render_template
+from flask import render_template, request, flash, redirect, url_for
+
+from modele import Kategoria, Pytanie, Odpowiedz
 
 app = Flask(__name__)
 
@@ -15,9 +17,24 @@ def hello():
 
 @app.route("/lista")
 def lista():
-    return "<h1>Witaj na serzwerze</h1><h2>Aplikacja Quiz</h2>"
-    
-@app.route("/klasa")
-def klasa():
-    return "<h1>kl3ag1</h1>"
+    pytania = Pytanie().select()
+    if not pytania.count():
+        pass
+    return render_template('lista.html', pytania=pytania)
 
+@app.route("/quiz", methods=['GET', 'POST'])
+def quiz():
+    
+    print(request.form)
+    
+    if request.method == 'POST':
+        wynik = 0
+        for pid, oid in request.form.items():
+            if Odpowiedz().get(Odpowiedz.id == int(oid)).odpok:
+                wynik += 1
+                
+        flash('Poprawnych odpowiedzi: {}'.format(wynik), 'info')
+        return redirect(url_for('hello'))
+    
+    pytania = Pytanie().select().join(Odpowiedz).distinct()
+    return render_template('quiz.html', pytania=pytania)
