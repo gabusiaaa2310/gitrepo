@@ -5,8 +5,8 @@
 
 from flask import Flask
 from flask import render_template, request, flash, redirect, url_for
-
 from modele import Kategoria, Pytanie, Odpowiedz
+from forms import *
 
 
 app = Flask(__name__)
@@ -40,3 +40,10 @@ def quiz():
     pytania = Pytanie().select().join(Odpowiedz).distinct()
     return render_template('quiz.html', pytania=pytania)
 
+
+@app.route("/dodaj", methods=['GET', 'POST'])
+def dodaj():
+    form = DodajForm()
+    form.kategoria.choices = [(k.id, k.kategoria) for k in Kategoria.select()]
+
+    return render_template('dodaj.html', form=form)
