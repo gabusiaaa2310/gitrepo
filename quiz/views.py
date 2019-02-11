@@ -40,10 +40,50 @@ def quiz():
     pytania = Pytanie().select().join(Odpowiedz).distinct()
     return render_template('quiz.html', pytania=pytania)
 
+def flash_errors(form):
+    """Odczytanie wszystkich błędów formularza i przygotowanie komunikatów"""
+    for field, errors in form.errors.items():
+        for error in errors:
+            if type(error) is list:
+                error = error[0]
+            flash("Błąd: {}. Pole: {}".format(
+                error,
+                getattr(form, field).label.text))
 
 @app.route("/dodaj", methods=['GET', 'POST'])
 def dodaj():
     form = DodajForm()
     form.kategoria.choices = [(k.id, k.kategoria) for k in Kategoria.select()]
 
+    if form.validate_on_submit():
+        p = Pytanie(pytanie=form.pytanie.data, kategoria=form.kategoria.data)
+        p.save()
+        for o in form.odpowiedzi.data:
+            odp = Odpowiedz(odpowiedz=o['odpowiedz'],
+                            pytanie=p.id,
+                            odpok=int(o['odpok']))
+            odp.save()
+        flash("Dodano pytanie: {}".format(form.pytanie.data))
+        return redirect(url_for('lista'))
+    elif request.method == 'POST':
+        flash_errors(form)
+        
     return render_template('dodaj.html', form=form)
+    
+    
+def get_or_404(pid):
+    try:
+        p = Pytanie.get_by_id(pid)
+        return p
+    except Pytanie.DoesNotExist:
+        abort(404)
+
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+[todo: szablon 404]
+
+@app.route("/usun/<int:pid>", methods=['GET', 'POST'])
+def usun(pid):
+    p= get_or_404(pid)
