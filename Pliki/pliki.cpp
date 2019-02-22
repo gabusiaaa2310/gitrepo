@@ -62,6 +62,8 @@ int liczZnaki(char nazwa[]) {
             ilealnum++; // liczymy litery i liczby
             wyjscie.put(znak); // zapisanie znaku do pliku
         }
+        if ((int)znak == 10)
+        wyjscie.put('\n');
     }
     wejscie.close(); wyjscie.close();
     cout << "Znaków: " << ile << endl;
@@ -69,6 +71,19 @@ int liczZnaki(char nazwa[]) {
     cout << "Cyfr: " << ilenum << endl;
     return ile;
 }
+
+// odczytaj z pliku tekst.txt liczby, w tym rzeczywiste,
+// i zapisz je w pliku cyfry.txt
+
+int zapiszCyfry(char nazwa []) {
+    char kopia[15] = {"cyfry.txt"};
+    ifstream wejscie(nazwa);
+    if (!wejscie) { cout << "Brak pliku! "; return 1;}
+    ofstream wyjscie(kopia);
+    if (!wyjscie) { cout << "Błąd pliku! "; return 1;}
+}
+
+
 
 int main(int argc, char **argv)
 {    
